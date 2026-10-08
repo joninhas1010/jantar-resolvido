@@ -1,6 +1,8 @@
 import { useState, useMemo } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { receitasPrincipais } from '../content/receitas-principais'
+import { receitasEconomicos } from '../content/receitas-economicos'
+import { receitasSOS } from '../content/receitas-sos'
 import PratoPlaceholder from '../components/PratoPlaceholder'
 import { IconClock, IconUsers } from '../components/Icons'
 import { formatQuantidade, scaleQuantidade } from '../utils/formatQuantidade'
@@ -19,7 +21,7 @@ export default function Receita() {
   const navigate = useNavigate()
 
   const receita = useMemo(() => {
-    return receitasPrincipais.find(r => r.id === id)
+    return [...receitasPrincipais, ...receitasEconomicos, ...receitasSOS].find(r => r.id === id)
   }, [id])
 
   const [porcoes, setPorcoes] = useState(receita?.porcoes ?? 4)

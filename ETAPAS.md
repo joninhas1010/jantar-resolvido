@@ -9,7 +9,7 @@ Tela de receita (`/receita/:id`) com foto, ingredientes agrupados, substituiçõ
 ## Etapa 3 — Calendário com troca de dias e listas de compras por semana ✅
 Tela Calendário com grade de 30 dias, troca de dias (com desfazer), restaurar sequência original e ajuste de data de início. Tela Compras com listas por semana geradas das receitas, agrupadas por categoria, com marcação, compartilhamento e itens extras.
 
-## Etapa 4 — Extras e tela Sobre
+## Etapa 4 — Extras e tela Sobre ✅
 Tela Extras com os 3 complementos: 15 Jantares Econômicos, 10 Jantares SOS, Guia Geladeira Pronta. Busca de substituições. Tela Sobre com avisos, backup/importação de progresso e informações do app.
 
 ## Etapa 5 — Conteúdo completo das receitas

@@ -1,6 +1,8 @@
 import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { receitasPrincipais } from '../content/receitas-principais'
+import { receitasEconomicos } from '../content/receitas-economicos'
+import { receitasSOS } from '../content/receitas-sos'
 import { useTimer } from '../hooks/useTimer'
 import { useWakeLock } from '../hooks/useWakeLock'
 
@@ -14,7 +16,7 @@ export default function PassoAPasso() {
   const { id } = useParams<{ id: string }>()
   const navigate = useNavigate()
 
-  const receita = useMemo(() => receitasPrincipais.find(r => r.id === id), [id])
+  const receita = useMemo(() => [...receitasPrincipais, ...receitasEconomicos, ...receitasSOS].find(r => r.id === id), [id])
   const [passoAtual, setPassoAtual] = useState(0)
   const [concluido, setConcluido] = useState(false)
   const wakeLock = useWakeLock()

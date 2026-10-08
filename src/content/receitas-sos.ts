@@ -1,0 +1,86 @@
+import { Receita } from '../types'
+
+export const receitasSOS: Receita[] = [
+  {
+    id: 'sos-01',
+    tipo: 'sos',
+    nome: 'Ovo mexido cremoso com torrada',
+    tempoTotalMin: 8,
+    porcoes: 4,
+    ingredientes: [
+      { nome: 'Ovo', quantidade: 8, unidade: 'unidades', categoria: 'Proteínas' },
+      { nome: 'Pão de forma', quantidade: 8, unidade: 'fatias', categoria: 'Grãos e acompanhamentos' },
+      { nome: 'Manteiga', quantidade: 2, unidade: 'colheres de sopa', categoria: 'Outros' },
+      { nome: 'Sal', quantidade: null, unidade: '', categoria: 'Temperos', observacao: 'a gosto' },
+      { nome: 'Pimenta-do-reino', quantidade: null, unidade: '', categoria: 'Temperos', observacao: 'a gosto' },
+      { nome: 'Cebolinha', quantidade: null, unidade: '', categoria: 'Temperos', observacao: 'a gosto' },
+    ],
+    passos: [
+      { texto: 'Coloque as fatias de pão na torradeira ou em uma frigideira seca até dourar.', minutos: 2, ingredientes: ['Pão de forma'] },
+      { texto: 'Derreta a manteiga em uma frigideira antiaderente em fogo baixo.', ingredientes: ['Manteiga'] },
+      { texto: 'Quebre os ovos direto na frigideira, tempere com sal e pimenta.', ingredientes: ['Ovo', 'Sal', 'Pimenta-do-reino'] },
+      { texto: 'Mexa sem parar com uma espátula em fogo baixo por 4 minutos até ficarem cremosos. Tire do fogo ainda úmidos.', minutos: 4, ingredientes: ['Ovo'] },
+      { texto: 'Sirva sobre as torradas e finalize com cebolinha.', ingredientes: ['Cebolinha'] },
+    ],
+    substituicoes: [
+      { falta: 'Pão de forma', use: 'Pão francês cortado ao meio e tostado' },
+      { falta: 'Manteiga', use: 'Azeite ou cream cheese' },
+      { falta: 'Cebolinha', use: 'Salsinha ou orégano' },
+    ],
+    etiquetas: ['SOS', 'Até 10 min'],
+  },
+  {
+    id: 'sos-02',
+    tipo: 'sos',
+    nome: 'Macarrão com alho, azeite e queijo',
+    tempoTotalMin: 10,
+    porcoes: 4,
+    ingredientes: [
+      { nome: 'Macarrão espaguete', quantidade: 500, unidade: 'g', categoria: 'Grãos e acompanhamentos' },
+      { nome: 'Alho', quantidade: 6, unidade: 'dentes', categoria: 'Temperos' },
+      { nome: 'Azeite', quantidade: 4, unidade: 'colheres de sopa', categoria: 'Temperos' },
+      { nome: 'Queijo parmesão ralado', quantidade: 4, unidade: 'colheres de sopa', categoria: 'Outros' },
+      { nome: 'Sal', quantidade: null, unidade: '', categoria: 'Temperos', observacao: 'a gosto' },
+      { nome: 'Pimenta-do-reino', quantidade: null, unidade: '', categoria: 'Temperos', observacao: 'a gosto' },
+      { nome: 'Salsinha', quantidade: null, unidade: '', categoria: 'Temperos', observacao: 'a gosto' },
+    ],
+    passos: [
+      { texto: 'Cozinhe o macarrão em bastante água fervente com sal. Escorra e reserve um pouco da água do cozimento.', minutos: 8, ingredientes: ['Macarrão espaguete', 'Sal'] },
+      { texto: 'Fatie o alho bem fino. Aqueça o azeite em fogo médio e doure o alho até ficar levemente dourado.', minutos: 1, ingredientes: ['Alho', 'Azeite'] },
+      { texto: 'Adicione o macarrão escorrido e um pouco da água do cozimento. Mexa bem.', ingredientes: ['Macarrão espaguete'] },
+      { texto: 'Finalize com parmesão, salsinha e pimenta. Sirva imediatamente.', ingredientes: ['Queijo parmesão ralado', 'Salsinha', 'Pimenta-do-reino'] },
+    ],
+    substituicoes: [
+      { falta: 'Queijo parmesão', use: 'Requeijão ou cream cheese' },
+      { falta: 'Macarrão espaguete', use: 'Qualquer massa curta' },
+      { falta: 'Salsinha', use: 'Manjericão ou cebolinha' },
+    ],
+    etiquetas: ['SOS', 'Até 10 min'],
+  },
+  {
+    id: 'sos-03',
+    tipo: 'sos',
+    nome: 'Sanduíche quente de queijo e presunto',
+    tempoTotalMin: 8,
+    porcoes: 4,
+    ingredientes: [
+      { nome: 'Pão de forma', quantidade: 8, unidade: 'fatias', categoria: 'Grãos e acompanhamentos' },
+      { nome: 'Presunto', quantidade: 8, unidade: 'fatias', categoria: 'Proteínas' },
+      { nome: 'Queijo muçarela', quantidade: 8, unidade: 'fatias', categoria: 'Outros' },
+      { nome: 'Manteiga', quantidade: 2, unidade: 'colheres de sopa', categoria: 'Outros' },
+      { nome: 'Orégano', quantidade: null, unidade: '', categoria: 'Temperos', observacao: 'a gosto' },
+    ],
+    passos: [
+      { texto: 'Monte os sanduíches: 2 fatias de presunto e 2 de queijo em cada par de pão.', ingredientes: ['Pão de forma', 'Presunto', 'Queijo muçarela'] },
+      { texto: 'Passe manteiga na parte de fora de cada fatia de pão.', ingredientes: ['Manteiga'] },
+      { texto: 'Grelhe os sanduíches em uma frigideira ou sanduicheira por 3 minutos de cada lado até dourar.', minutos: 6, ingredientes: [] },
+      { texto: 'Polvilhe orégano por cima e sirva quente.', ingredientes: ['Orégano'] },
+    ],
+    substituicoes: [
+      { falta: 'Presunto', use: 'Peito de peru ou blanquet' },
+      { falta: 'Pão de forma', use: 'Pão francês aberto' },
+      { falta: 'Queijo muçarela', use: 'Queijo prato ou provolone' },
+    ],
+    etiquetas: ['SOS', 'Até 10 min'],
+  },
+]

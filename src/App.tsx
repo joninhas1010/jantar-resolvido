@@ -5,6 +5,11 @@ import Hoje from './pages/Hoje'
 import Calendario from './pages/Calendario'
 import Compras from './pages/Compras'
 import Extras from './pages/Extras'
+import ExtrasEconomicos from './pages/ExtrasEconomicos'
+import ExtrasSOS from './pages/ExtrasSOS'
+import ExtrasGeladeira from './pages/ExtrasGeladeira'
+import ExtrasSubstituicoes from './pages/ExtrasSubstituicoes'
+import Sobre from './pages/Sobre'
 import Receita from './pages/Receita'
 import PassoAPasso from './pages/PassoAPasso'
 
@@ -21,6 +26,11 @@ export default function App() {
         <Route path="/calendario" element={<Calendario />} />
         <Route path="/compras" element={<Compras />} />
         <Route path="/extras" element={<Extras />} />
+        <Route path="/extras/economicos" element={<ExtrasEconomicos />} />
+        <Route path="/extras/sos" element={<ExtrasSOS />} />
+        <Route path="/extras/geladeira" element={<ExtrasGeladeira />} />
+        <Route path="/extras/substituicoes" element={<ExtrasSubstituicoes />} />
+        <Route path="/sobre" element={<Sobre />} />
         <Route path="/receita/:id" element={<Receita />} />
         <Route path="/receita/:id/preparo" element={<PassoAPasso />} />
       </Routes>
