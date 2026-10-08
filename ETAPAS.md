@@ -12,8 +12,8 @@ Tela Calendário com grade de 30 dias, troca de dias (com desfazer), restaurar s
 ## Etapa 4 — Extras e tela Sobre ✅
 Tela Extras com os 3 complementos: 15 Jantares Econômicos, 10 Jantares SOS, Guia Geladeira Pronta. Busca de substituições. Tela Sobre com avisos, backup/importação de progresso e informações do app.
 
-## Etapa 5 — Conteúdo completo das receitas
-Escrever todas as receitas em lotes: dias 1–10, 11–20, 21–30 (principais), 15 Econômicos e 10 SOS. Cada uma com ingredientes, passos, substituições e tempos reais.
+## Etapa 5 — Conteúdo completo das receitas ✅
+Todas as 55 receitas escritas: 30 principais (dias 1–30), 15 Econômicos e 10 SOS. Cada uma com ingredientes categorizados, 5–8 passos com timers, 2–4 substituições e tempos reais (≤20 min principais, ≤10 min SOS). Nomes de ingredientes padronizados para agregação na lista de compras.
 
-## Etapa 6 — PWA, offline e testes
-Instalação como app (manifest, ícones, service worker com vite-plugin-pwa). Funcionamento 100% offline. Testes unitários para cálculo de dias, troca de dias, listas de compras e escala de porções. README final.
+## Etapa 6 — PWA, offline e testes ✅
+Instalação como app com vite-plugin-pwa (manifest.webmanifest, ícones 192/512/maskable, service worker com precache de 13 assets e cache de Google Fonts). Funciona 100% offline após primeira abertura. 30 testes unitários com Vitest: cálculo do dia do plano, geração/agregação de listas de compras, agrupamento por categoria e escala de porções com frações. README com instruções de uso, build, deploy e edição de conteúdo.
