@@ -3,7 +3,7 @@
 ## Etapa 1 — Projeto base, design system, navegação e tela Hoje ✅
 Projeto Vite + React + TypeScript + Tailwind. Design system com cores, fontes, componentes de vidro e formas orgânicas. Navegação inferior em pílula de vidro. Tela Hoje fiel à imagem de referência com 3 receitas de exemplo.
 
-## Etapa 2 — Receita completa, ajuste de porções e passo a passo
+## Etapa 2 — Receita completa, ajuste de porções e passo a passo ✅
 Tela de receita (`/receita/:id`) com foto, ingredientes agrupados, substituições e ajuste de porções que recalcula quantidades. Modo passo a passo (`/receita/:id/preparo`) com cronômetro, tela sempre acesa e tela final "Prato pronto".
 
 ## Etapa 3 — Calendário com troca de dias e listas de compras por semana

@@ -76,9 +76,15 @@ export default function Hoje() {
                 JANTAR DO DIA
               </span>
               {/* Título */}
-              <h1 className="heading-tight text-[26px] leading-[1.1] text-white mb-4">
-                {receita.nome}
-              </h1>
+              <button
+                onClick={() => navigate(`/receita/${receita.id}`)}
+                className="text-left"
+                aria-label={`Ver receita: ${receita.nome}`}
+              >
+                <h1 className="heading-tight text-[26px] leading-[1.1] text-white mb-4">
+                  {receita.nome}
+                </h1>
+              </button>
             </div>
 
             {/* Foto / Placeholder */}
