@@ -3,22 +3,21 @@ import { useNavigate } from 'react-router-dom'
 import Logo from '../components/Logo'
 import PratoPlaceholder from '../components/PratoPlaceholder'
 import { IconClock, IconUsers, IconBulb, IconMeat, IconLeaf, IconWheat, IconJar } from '../components/Icons'
-import { receitasPrincipais } from '../content/receitas-principais'
-import { Receita } from '../types'
+import { useApp } from '../context/AppContext'
 
 const DIAS_SEMANA = ['SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SÁB', 'DOM']
 
 export default function Hoje() {
   const navigate = useNavigate()
+  const { diaDoPlan, getReceitaDoDia } = useApp()
 
-  const diaDoPlan = 12
-  const semanaInicio = 10
+  const semanaInicio = Math.floor((diaDoPlan - 1) / 7) * 7 + 1
 
   const [diaSelecionado, setDiaSelecionado] = useState(diaDoPlan)
 
-  const receita: Receita | undefined = useMemo(() => {
-    return receitasPrincipais.find(r => r.diaPadrao === diaSelecionado)
-  }, [diaSelecionado])
+  const receita = useMemo(() => {
+    return getReceitaDoDia(diaSelecionado)
+  }, [diaSelecionado, getReceitaDoDia])
 
   const diasDaSemana = Array.from({ length: 7 }, (_, i) => semanaInicio + i)
 

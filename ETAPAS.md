@@ -6,7 +6,7 @@ Projeto Vite + React + TypeScript + Tailwind. Design system com cores, fontes, c
 ## Etapa 2 — Receita completa, ajuste de porções e passo a passo ✅
 Tela de receita (`/receita/:id`) com foto, ingredientes agrupados, substituições e ajuste de porções que recalcula quantidades. Modo passo a passo (`/receita/:id/preparo`) com cronômetro, tela sempre acesa e tela final "Prato pronto".
 
-## Etapa 3 — Calendário com troca de dias e listas de compras por semana
+## Etapa 3 — Calendário com troca de dias e listas de compras por semana ✅
 Tela Calendário com grade de 30 dias, troca de dias (com desfazer), restaurar sequência original e ajuste de data de início. Tela Compras com listas por semana geradas das receitas, agrupadas por categoria, com marcação, compartilhamento e itens extras.
 
 ## Etapa 4 — Extras e tela Sobre
