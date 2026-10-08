@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-preto text-white font-sans antialiased;
+    overscroll-behavior: none;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+    display: none;
+  }
+}
+
+@layer components {
+  .glass {
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  }
+
+  .glass-subtle {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .btn-amarelo {
+    @apply bg-amarelo text-preto font-bold rounded-full py-4 px-6 text-center;
+    @apply active:scale-95 transition-transform duration-150;
+  }
+
+  .btn-amarelo:hover {
+    @apply scale-105;
+  }
+
+  .pill {
+    @apply rounded-full;
+  }
+
+  .label-caps {
+    @apply text-[10px] uppercase tracking-[.2em] font-semibold;
+  }
+
+  .heading-tight {
+    @apply font-extrabold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
