@@ -1,0 +1,6 @@
+<svg width="192" height="192" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+  <rect width="192" height="192" rx="32" fill="#0A0A0A"/>
+  <circle cx="76" cy="96" r="30" fill="#FDE047"/>
+  <circle cx="106" cy="96" r="30" fill="#FDE047"/>
+  <text x="96" y="155" text-anchor="middle" fill="#FDE047" font-family="Inter, sans-serif" font-size="16" font-weight="700" letter-spacing="-0.5">Jantar Resolvido</text>
+</svg>
